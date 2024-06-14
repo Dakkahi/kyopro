@@ -15,12 +15,12 @@ int main(){
     ll A[N], B[N];
     vector<ll> G[N+1];
     ll color[N+1];
+    fill(color, color+N+1, -1);
     color[1] = 0;
     for(ll i = 1; i <= N-1; i++){
         cin >> A[i] >> B[i];
         G[A[i]].push_back(B[i]);
         G[B[i]].push_back(A[i]);
-        color[i+1] = -1;
     }
 
     queue<ll> Q;
@@ -35,24 +35,24 @@ int main(){
             }
         }
     }
-    ll sum = 0;
     vector<ll> red;
     vector<ll> blue;
     for(ll i = 1; i <= N; i++) {
-        sum += color[i];
         if(color[i] == 1) red.push_back(i);
         else blue.push_back(i); 
         
     }
-    if(sum >= N/2){ //color[i] = 1のものを取り出す
-        for(ll i = 1; i <= N/2; i++){
+    if(red.size()>= N/2){ //color[i] = 1のものを取り出す
+        for(ll i = 0; i < N/2; i++){
             cout << red[i] << " ";
         }
     }
     else{
-        for(ll i = 1; i <= N/2; i++){
+        for(ll i = 0; i < N/2; i++){
             cout << blue[i] << " ";
         }
     }
+    cout << endl;
+    return 0;
 
 }
