@@ -7,13 +7,3 @@
 #include<vector>
 using namespace std;
 using ll = long long;
-
-int main(){
-    int a = ' ';
-    cout << a << endl;
-
-    char b = 65;
-    cout << b << endl;
-    
-    return 0;
-}

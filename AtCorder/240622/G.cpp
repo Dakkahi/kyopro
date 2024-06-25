@@ -9,11 +9,12 @@ using namespace std;
 using ll = long long;
 
 int main(){
-    int a = ' ';
-    cout << a << endl;
+    ll H, W, K, Si, Sj;
+    cin >> H >>W >> K;
+    cin >> Si >> Sj;
+    ll A[H*W+1];
+    for(ll i = 1; i <= H*W; i++) cin >> A[i];
 
-    char b = 65;
-    cout << b << endl;
     
-    return 0;
+
 }
