@@ -5,15 +5,14 @@
 #include<cmath>
 #include<queue>
 #include<vector>
+#include <cctype>
 using namespace std;
 using ll = long long;
 
 int main(){
-    int a = ' ';
-    cout << a << endl;
 
-    char b = 65;
-    cout << b << endl;
+    char b = 'a';
+    isalpha(b);
     
     return 0;
 }
