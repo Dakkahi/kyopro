@@ -9,10 +9,3 @@
 using namespace std;
 using ll = long long;
 
-int main(){
-
-    char b = 'a';
-    isalpha(b);
-    
-    return 0;
-}
